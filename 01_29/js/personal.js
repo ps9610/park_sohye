@@ -35,7 +35,9 @@
             var cnt = 0;
             var _window = $(window);
             var _windowW = _window.innerWidth();
+            var _windowH = _window.innerHeight();
             var _section1 = $("#section1");
+            var _section1H = _section1.innerHeight();
             var _slideContainer = _section1.find(".slide-container");
             var _slideWrap = _section1.find(".slide-wrap");
             var _slide = _section1.find(".slide");
@@ -48,7 +50,9 @@
             setTimeout(resizeFn,10);
             function resizeFn(){
                 _windowW = _window.innerWidth();
+                _section1H = _windowH;
                 _slideW = _windowW;
+                _section1.css({ height : _section1H });
                 _slide.css({ width : _slideW });
                 _slideWrap.css({ width : (_slideW*n)});
 

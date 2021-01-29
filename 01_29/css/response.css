@@ -19,11 +19,14 @@
 }
 
 @media all and (max-width:800px){
-    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-wrap > h2 {font-size:1.875vw/* 15px */;}
     #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-wrap > h3 {font-size:5.25vw/* 42px */;}
-    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-wrap > h4 > a {font-size:1.875vw/* 15px */;}
     #wrap #main #section1 .wrap .gap .container .slide-container .prev-wrap {left:1%;}
     #wrap #main #section1 .wrap .gap .container .slide-container .next-wrap {right:1%;}
+}
+
+@media all and (max-width:768px){
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-wrap > h2 {font-size:1.953125vw/* 15px */;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-wrap > h4 > a {font-size:1.953125vw/* 15px */;}
 }
 
 @media all and (max-width:650px){
