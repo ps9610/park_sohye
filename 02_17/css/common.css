@@ -21,7 +21,7 @@ ul, li {list-style: none;}
 a {color: #222; text-decoration:none;}
 h1, h2, h3, h4, h5, h6 {font-weight:normal; font-size:14px;}
 img {vertical-align:middle;}
-.fixedclear:after {content: "";display:block;clear:both;} /* floating hack */
+.fixedclear:after {content:"";display:block;clear:both;} /* floating hack */
 .hide {display: none;}
 .blind{display:block;text-indent:-2000px;overflow:hidden;}
 

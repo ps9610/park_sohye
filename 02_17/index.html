@@ -7,7 +7,7 @@
     <meta name="Viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0. maximum-scale=1.6, user-scalable=no">
     <meta name="Title" content="박소혜 포트폴리오">
     <meta name="Publisher" content="프론트엔드, 프레임워크 박소혜">
-    <meta name="Author-date" content="2021-01-29"> 
+    <meta name="Author-date" content="2021-02-17"> 
     <meta name="Author" content="프론트엔드, 프레임워크 박소혜">
     <meta name="Copyright" content="프론트엔드, 프레임워크 박소혜">
     <meta name="Keywords" content="프론트엔드, UX, UI, 프레임워크, 서버개발, 데이터베이스, 알고리즘">
@@ -25,7 +25,7 @@
 
     <!-- 오픈 아이콘 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- font-awesome 4.0 -->
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- font-awesome 5.0 -->
+    <script src="https://kit.fontawesome.com/4f7161b8b7.js" crossorigin="anonymous"></script> <!-- font-awesome 5.0 -->
 
     <!-- 오픈소스 -->
     <script src="./js/lib/jquery-1.12.4.min.js"></script>
@@ -68,37 +68,54 @@
                         <!-- 로고 -->
                         <div class="left">
                             <h1 class="logo">
-                                <a href="#body" class="logo-btn smooth-btn" title="프로필 포트폴리오">PARK SO HYE</a>
+                                <a href="#section1" class="logo-btn smooth-btn" title="프로필 포트폴리오">PARK SO HYE</a>
                             </h1>
                         </div>
                         <!-- 네비게이션 -->
                         <div class="center">
                             <nav id="nav">
                                 <ul class="fixedclear">
-                                    <li><a href="#section" class="main-btn smooth-btn" title="홈">HOME</a></li>
-                                    <li><a href="#section" class="main-btn smooth-btn" title="자기소개">ABOUT ME</a></li>
-                                    <li><a href="#section" class="main-btn smooth-btn" title="개발능력">SKILLS</a></li>
-                                    <li><a href="#section" class="main-btn smooth-btn" title="포트폴리오">WORKS</a></li>
-                                    <li><a href="#section" class="main-btn smooth-btn" title="연락처">CONTACT</a></li>
+                                    <li><a href="#section1" class="main-btn smooth-btn" title="홈">HOME</a></li>
+                                    <li><a href="#section2" class="main-btn smooth-btn" title="자기소개">ABOUT ME</a></li>
+                                    <li><a href="#section3" class="main-btn smooth-btn" title="개발능력">SKILLS</a></li>
+                                    <li><a href="#section4" class="main-btn smooth-btn" title="포트폴리오">WORKS</a></li>
+                                    <li><a href="#footer" class="main-btn smooth-btn" title="연락처">CONTACT</a></li>
                                 </ul>
                             </nav>
+                        </div>
                             <!-- 모바일 -->
-                            <div class="mobile">
+                        <div class="mobile">
                                 <a href="#" class="mobile-btn" title="모바일 전용 메뉴바">
                                     <i class="mline mline1"></i>
                                     <i class="mline mline2"></i>
                                     <i class="mline mline3"></i>
                                 </a>
-                            </div>
-                            <div class="mobile-menu">
-                                <ul>
-                                    <li><a href="#section" class="mobile-main-btn smooth-btn" title="모바일 홈">HOME</a></li>
-                                    <li><a href="#section" class="mobile-main-btn smooth-btn" title="모바일 자기소개">ABOUT ME</a></li>
-                                    <li><a href="#section" class="mobile-main-btn smooth-btn" title="모바일 개발능력">SKILLS</a></li>
-                                    <li><a href="#section" class="mobile-main-btn smooth-btn" title="모바일 포트폴리오">WORKS</a></li>
-                                    <li><a href="#section" class="mobile-main-btn smooth-btn" title="연락처">CONTACT</a></li>
-                                </ul>
-                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 모바일 메뉴 -->
+                <div class="mobile-menu">
+                    <div class="m-gap">
+                        <div class="close">
+                            <a href="#" class="close-btn" title="모바일 닫기">
+                                <i></i>
+                                <i></i>
+                            </a>
+                        </div>
+                        <div class="m-content">
+                            <ul>
+                                <li><a href="#section1" class="mobile-main-btn smooth-btn close-btn" title="모바일 홈">HOME</a></li>
+                                <li><a href="#section2" class="mobile-main-btn smooth-btn close-btn" title="모바일 자기소개">ABOUT ME</a></li>
+                                <li><a href="#section3" class="mobile-main-btn smooth-btn close-btn" title="모바일 개발능력">SKILLS</a></li>
+                                <li><a href="#section4" class="mobile-main-btn smooth-btn close-btn" title="모바일 포트폴리오">WORKS</a></li>
+                                <li><a href="#footer" class="mobile-main-btn smooth-btn close-btn" title="연락처">CONTACT</a></li>
+                            </ul>
+                        </div>
+                        <div class="m-footer">
+                            <ul>
+                                <li>Park So Hye</li>
+                                <li>Copyright &copy; Park Sohye. All rights reserved.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -122,11 +139,9 @@
                                             <div class="text-wrap">
                                                 <h2>제이슨 여행사/ Responsive Website, Backend</h2>
                                                 <h3>행복해지는 여행을 추구하는<br>제이슨 여행사 공식 홈페이지입니다.</h3>
-                                                <h4>
-                                                    <a href="http://sohye.dothome.co.kr/jason_php" title="더보기" class="smooth-btn">more
-                                                        <i></i>
-                                                    </a>
-                                                </h4>
+                                                <a href="#section2" title="더보기" class="smooth-btn">more
+                                                    <i></i>
+                                                </a>
                                             </div>
                                         </li>
                                         <!-- 인천공항 -->
@@ -134,11 +149,9 @@
                                             <div class="text-wrap">
                                                 <h2>인천공항/ Responsive Website</h2>
                                                 <h3>대한민국의 관문 역할을 하는<br>인천공항 공식 홈페이지입니다.</h3>
-                                                <h4>
-                                                    <a href="http://sohye.dothome.co.kr/airport/" title="더보기" class="smooth-btn">more
-                                                        <i></i>
-                                                    </a>
-                                                </h4>
+                                                <a href="http://sohye.dothome.co.kr/airport/" title="더보기" class="smooth-btn">more
+                                                    <i></i>
+                                                </a>
                                             </div>
                                         </li>
                                         <!-- 홍고 -->
@@ -146,11 +159,9 @@
                                             <div class="text-wrap">
                                                 <h2>홍고시계/ Responsive Website</h2>
                                                 <h3>WooCommerce의 WordPress 테마<br>홍고 공식 홈페이지입니다.</h3>
-                                                <h4>
-                                                    <a href="http://sohye.dothome.co.kr/hongo/" title="더보기" class="smooth-btn">more
-                                                        <i></i>
-                                                    </a>
-                                                </h4>
+                                                <a href="http://sohye.dothome.co.kr/hongo/" title="더보기" class="smooth-btn">more
+                                                    <i></i>
+                                                </a>
                                             </div>
                                         </li>
                                         <!-- 브란도 -->
@@ -158,11 +169,9 @@
                                             <div class="text-wrap">
                                             <h2>브란도 레스토랑/ Responsive Website</h2>
                                                 <h3>반응형 원페이지 WordPress 테마 <br>브란도 공식 홈페이지입니다.</h3>
-                                                <h4>
-                                                    <a href="http://sohye.dothome.co.kr/restaurant_brando/" title="더보기" class="smooth-btn">more
-                                                        <i></i>
-                                                    </a>
-                                                </h4>
+                                                <a href="http://sohye.dothome.co.kr/restaurant_brando/" title="더보기" class="smooth-btn">more
+                                                    <i></i>
+                                                </a>
                                             </div>
                                         </li>
                                         <!-- 신라호텔 -->
@@ -170,11 +179,9 @@
                                             <div class="text-wrap">
                                                 <h2>호텔신라/ PC Website</h2>
                                                 <h3>한국을 대표하는<br>신라호텔 공식 홈페이지입니다.</h3>
-                                                <h4>
-                                                    <a href="http://sohye.dothome.co.kr/shillahotels/" title="더보기" class="smooth-btn">more
-                                                        <i></i>
-                                                    </a>
-                                                </h4>
+                                                <a href="http://sohye.dothome.co.kr/shillahotels/" title="더보기" class="smooth-btn">more
+                                                    <i></i>
+                                                </a>
                                             </div>
                                         </li>
                                         <!-- 스타벅스 -->
@@ -182,35 +189,30 @@
                                             <div class="text-wrap">
                                                 <h2>스타벅스/ PC Website</h2>
                                                 <h3>세계적인 커피 브랜드 <br>스타벅스 공식 홈페이지입니다.</h3>
-                                                <h4>
-                                                    <a href="http://sohye.dothome.co.kr/starbuks/" title="더보기" class="smooth-btn">more
-                                                        <i></i>
-                                                    </a>
-                                                </h4>
+                                                <a href="http://sohye.dothome.co.kr/starbuks/" title="더보기" class="smooth-btn">more
+                                                    <i></i>
+                                                </a>
                                             </div>
                                         </li>
-                                        <!-- 파이썬 -->
+                                        <!-- 파이썬 
                                         <li class="slide slide6">
                                             <div class="text-wrap">
                                                 <h2>스택오브플로우/ PC Website</h2>
                                                 <h3>가장 큰 규모의 프로그래머 커뮤니티 <br>스택오브플로우 공식 홈페이지입니다.</h3>
-                                                <h4>
-                                                    <a href="javascript:" title="더보기" class="smooth-btn">more
-                                                        <i></i>
-                                                    </a>
-                                                </h4>
+                                                <a href="javascript:" title="더보기" class="smooth-btn">more
+                                                    <i></i>
+                                                </a>
                                             </div>
                                         </li>
+                                        -->
                                         <!-- 모멘텀 -->
                                         <li class="slide slide7">
                                             <div class="text-wrap">
                                                 <h2>모멘텀/ Realtime PC Website</h2>
                                                 <h3>구글의 To-do 확장 프로그램 <br>모멘텀입니다.</h3>
-                                                <h4>
-                                                    <a href="https://ps9610.github.io/vanilla-js-chrome/chrome.html" title="더보기" class="smooth-btn">more
-                                                        <i></i>
-                                                    </a>
-                                                </h4>
+                                                <a href="https://ps9610.github.io/vanilla-js-chrome/chrome.html" title="더보기" class="smooth-btn">more
+                                                    <i></i>
+                                                </a>
                                             </div>
                                         </li>
                                         <!-- 카카오톡 -->
@@ -218,11 +220,9 @@
                                             <div class="text-wrap">
                                                 <h2>카카오톡/ Responsive Website</h2>
                                                 <h3>한국의 국민 메신저 <br>카카오톡 PC버전입니다.</h3>
-                                                <h4>
-                                                    <a href="https://ps9610.github.io/kakao-clone-v2/" title="더보기" class="smooth-btn">more
-                                                        <i></i>
-                                                    </a>
-                                                </h4>
+                                                <a href="https://ps9610.github.io/kakao-clone-v2/" title="더보기" class="smooth-btn">more
+                                                    <i></i>
+                                                </a>
                                             </div>
                                         </li>
                                     </ul>
@@ -246,9 +246,18 @@
                             <div class="left-wrap">
                                 <div class="img-wrap"><h3 class="blind">image</h3></div>
                                 <div class="left-content">
-                                    <span><i class="fas fa-birthday-cake"></i>1996.10.01</span>
-                                    <span><i class="fas fa-phone-alt"></i>+82 10-2962-3908</span>
-                                    <span><i class="fas fa-envelope"></i>ps961001@gmail.com</span>
+                                    <div>
+                                        <i class="fas fa-birthday-cake"></i>
+                                        <span>1996.10.01</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-phone-alt"></i>
+                                        <span>+82 10-2962-3908</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-envelope"></i>
+                                        <span>ps961001@gmail.com</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="right-wrap">
@@ -330,7 +339,7 @@
                             <div>
                                 <h2>Copyright &copy; Park Sohye. All rights reserved.</h2>
                             </div>
-                        </div class="address">
+                        </div>
                     </div>
                 </div>
             </div>

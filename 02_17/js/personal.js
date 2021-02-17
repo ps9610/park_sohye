@@ -7,10 +7,18 @@
         },
         headerFn : function(){
             var _window = $(window);
+            var _winH = _window.innerHeight();
             var _header = $("#header");
             var _goTop  = $(".go-top");
             var _section1 = $("#section1");
             var _section1H = _section1.innerHeight();
+            var _smoothBtn = $(".smooth-btn");
+            var url = null;
+            var _html = $("html");
+            var _htmlBody = $("html, body");
+            var _mobileBtn = $(".mobile-btn");
+            var _mMenu = $(".mobile-menu");
+            var _closeBtn = $(".close-btn");
 
             //scrolling
             _window.scroll(function(){
@@ -30,6 +38,43 @@
                     _goTop.removeClass("addGotop");
                 }
             })
+
+            //smooth-scrolling
+            _smoothBtn.on({
+                click : function(e){
+                    e.preventDefault();
+                    var _this = $(this);
+                    url =  _this.attr("href");
+                    _htmlBody.stop().animate({ scrollTop : $(url).offset().top },800,"easeInOutQuint")
+                }
+            })
+
+            //모바일 버튼 토글
+            _mobileBtn.on({
+                click : function(e){
+                    e.preventDefault();
+                    _mMenu.show();
+                    _html.addClass("addScroll");
+                }
+            })
+            _closeBtn.on({
+                click : function(e){
+                    e.preventDefault()
+                    _mMenu.hide();
+                    _html.removeClass("addScroll");
+                }
+            })
+
+            //모바일 메뉴 높이 설정
+            setTimeout(resizeFn,10);
+            function resizeFn(){
+                _mMenu.css({ height:_winH })
+            }
+
+            _window.resize(function(){
+                resizeFn()
+            })
+
         },
         section1Fn : function(){
             var cnt = 0;
