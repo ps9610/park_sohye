@@ -4,6 +4,7 @@
             var that = this;
             that.headerFn();
             that.section1Fn();
+            that.section2Fn();
         },
         headerFn : function(){
             var _window = $(window);
@@ -19,6 +20,8 @@
             var _mobileBtn = $(".mobile-btn");
             var _mMenu = $(".mobile-menu");
             var _closeBtn = $(".close-btn");
+            var _delta = null;
+            var _wheelEvent = $(".wheel_event");
 
             //scrolling
             _window.scroll(function(){
@@ -33,11 +36,33 @@
                 //go-top
                 if( _this.scrollTop() > 30 ){
                     _goTop.addClass("addGotop");
+                    
                 }
                 else{
                     _goTop.removeClass("addGotop");
+                    
                 }
-            })
+                //휠마우스 이벤트
+                /* _wheelEvent.each(function(idx){
+                    var _this = $(this);
+                    _this.on("mousewheel DOMMouseScroll",function(e){
+                        e.preventDefault();
+                        if(e.detail){
+                            _delta = e.detail*(-40);
+                        }
+                        else{
+                            _delta = e.originalEvent.wheelDelta;
+                        }
+
+                            if(_delta<0){//스크롤 내리면
+                                _header.addClass("addWheel");
+                            }
+                            else{//스크롤 올리면 
+                                _header.removeClass("addWheel");
+                            }
+                    })
+                }) */
+            })            
 
             //smooth-scrolling
             _smoothBtn.on({
@@ -112,7 +137,6 @@
             //슬라이드
             function mainSlideFn(){
                 _slideWrap.stop().animate({ left: -(_slideW*cnt) },500);
-                console.log(_slideW);
                 
             };
             function nextCountSlideFn(){
@@ -157,6 +181,22 @@
                     }
                 }
             });
+        },
+
+        section2Fn : function(){
+            var _titleBtn = $(".title-btn");
+            var _rightContent1= $(".right-content1");
+            var t = false;
+
+            _titleBtn.on("click", function(){
+                if( t===false ){
+                    var _this = $(this);
+                    _this.removeClass("addUp");
+                    _this.addClass("addDown");
+                    _rightContent1.css({ marginTop : -161 });
+                }
+                
+            })
         }
     }
     personal.init();

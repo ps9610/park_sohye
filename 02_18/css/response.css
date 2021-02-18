@@ -14,6 +14,7 @@
 
 @media all and (max-width:1024px){
     #wrap #header .wrap .gap .container .left {width:100%;text-align:center;}
+    #wrap #header .wrap .gap .container .left > h1 > a {color:#57595c;}
     #wrap #header .wrap .gap .container .center #nav {display:none;}
     #wrap #header .wrap .gap .container .mobile {display:inline-block;}
     #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-wrap {width:100%;}
