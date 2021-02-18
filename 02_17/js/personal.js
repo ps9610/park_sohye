@@ -1,3 +1,19 @@
+const copyright = document.querySelector(".copyright");
+
+console.log("dd");
+console.log(copyright.innerHTML);
+
+if (copyright.innerHTML.indexOf("©")) {
+  const array = copyright.innerHTML.split("©");
+  const today = new Date();   
+  const year = today.getFullYear();
+  copyright.innerHTML = array[0] + "© " + year + array[1];
+    console.log(copyright.innerHTML);
+} else {
+  console.log("not found © symbol");
+}
+
+
 ;(function($,window,document,undefined){
     var personal = {
         init : function(){
