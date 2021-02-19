@@ -1,14 +1,15 @@
+// copyright 리얼타임 년도 설정하기
 const copyright = document.querySelector(".copyright");
 
-console.log("dd");
-console.log(copyright.innerHTML);
+//console.log("dd");
+//console.log(copyright.innerHTML); 연결 잘 됐는지 확인하기
 
 if (copyright.innerHTML.indexOf("©")) {
-  const array = copyright.innerHTML.split("©");
-  const today = new Date();   
-  const year = today.getFullYear();
+  const array = copyright.innerHTML.split("©"); 
+  const today = new Date(); //현재 년,월,일 다 가져오는 함수
+  const year = today.getFullYear(); //현재 년도만 가져옴
   copyright.innerHTML = array[0] + "© " + year + array[1];
-    console.log(copyright.innerHTML);
+    //console.log(copyright.innerHTML);
 } else {
   console.log("not found © symbol");
 }
@@ -199,16 +200,25 @@ if (copyright.innerHTML.indexOf("©")) {
         },
 
         section2Fn : function(){
-            var _titleBtn = $(".title-btn");
+            var _titleBtn = $(".title-btn1");
             var _rightContent1= $(".right-content1");
             var t = false;
 
             _titleBtn.on("click", function(){
                 if( t===false ){
+                    t=true;
                     var _this = $(this);
                     _this.removeClass("addUp");
                     _this.addClass("addDown");
                     _rightContent1.css({ marginTop : -161 });
+                }
+                else{
+                    t=false;
+                    console.log(t);
+                    var _this = $(this);
+                    _this.removeClass("addDown");
+                    _this.addClass("addUp");
+                    _rightContent1.css({ marginTop :0 });
                 }
                 
             })
