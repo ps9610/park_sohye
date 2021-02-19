@@ -13,7 +13,6 @@ if (copyright.innerHTML.indexOf("©")) {
   console.log("not found © symbol");
 }
 
-
 ;(function($,window,document,undefined){
     var personal = {
         init : function(){
