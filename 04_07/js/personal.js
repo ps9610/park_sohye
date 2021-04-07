@@ -45,7 +45,7 @@ if (copyright.innerHTML.indexOf("©")) {
             _window.scroll(function(){
                 var _this = $(this);
                 //header
-                if( _this.scrollTop() > _section1H-60 ){
+                if( _this.scrollTop() > 30 ){
                     _header.addClass("addHeader");
                 }
                 else{

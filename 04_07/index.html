@@ -65,21 +65,45 @@
                 <div class="gap">
                     <div class="container">
                         <!-- 로고 -->
-                        <div class="left">
+                        <div class="center">
                             <h1 class="logo">
                                 <a href="#section1" class="logo-btn smooth-btn" title="프로필 포트폴리오">PARK SO HYE</a>
                             </h1>
                         </div>
                         <!-- 네비게이션 -->
-                        <div class="center">
+                        <div class="left">
                             <nav id="nav">
-                                <ul class="fixedclear">
-                                    <li><a href="#section1" class="main-btn smooth-btn" title="홈">HOME</a></li>
-                                    <li><a href="#section2" class="main-btn smooth-btn" title="자기소개">ABOUT ME</a></li>
-                                    <li><a href="#section3" class="main-btn smooth-btn" title="개발능력">SKILLS</a></li>
-                                    <li><a href="#section4" class="main-btn smooth-btn" title="포트폴리오">WORKS</a></li>
-                                    <li><a href="#footer" class="main-btn smooth-btn" title="연락처">CONTACT</a></li>
-                                </ul>
+                                <div class="mobile-btn">
+                                    <a href="#" class="hamburger-btn" title="메인메뉴바">
+                                        <i class="mline mline1"></i>
+                                        <i class="mline mline2"></i>
+                                        <i class="mline mline3"></i>
+                                    </a>
+                                </div>
+                                <div class="mobile-menu">
+                                    <div class="m-gap">
+                                        <div class="close">
+                                            <a href="#" class="close-btn" title="모바일 닫기">
+                                                <i></i>
+                                                <i></i>
+                                            </a>
+                                        </div>
+                                        <div class="m-content">
+                                            <ul>
+                                                <li><a href="#section1" class="mobile-main-btn smooth-btn close-btn" title="홈">HOME</a></li>
+                                                <li><a href="#section2" class="mobile-main-btn smooth-btn close-btn" title="자기소개">ABOUT ME</a></li>
+                                                <li><a href="#section4" class="mobile-main-btn smooth-btn close-btn" title="포트폴리오">WORKS</a></li>
+                                                <li><a href="#footer" class="mobile-main-btn smooth-btn close-btn" title="연락처">CONTACT</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="m-footer">
+                                            <ul>
+                                                <li>Park So Hye</li>
+                                                <li>Copyright &copy; Park Sohye. All rights reserved.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </nav>
                         </div>
                     </div>
@@ -114,10 +138,9 @@
                                 </div>
                                 <div class="m-content">
                                     <ul>
-                                        <li><a href="#section1" class="mobile-main-btn smooth-btn close-btn" title="모바일 홈">HOME</a></li>
-                                        <li><a href="#section2" class="mobile-main-btn smooth-btn close-btn" title="모바일 자기소개">ABOUT ME</a></li>
-                                        <li><a href="#section3" class="mobile-main-btn smooth-btn close-btn" title="모바일 개발능력">SKILLS</a></li>
-                                        <li><a href="#section4" class="mobile-main-btn smooth-btn close-btn" title="모바일 포트폴리오">WORKS</a></li>
+                                        <li><a href="#section1" class="mobile-main-btn smooth-btn close-btn" title="홈">HOME</a></li>
+                                        <li><a href="#section2" class="mobile-main-btn smooth-btn close-btn" title="자기소개">ABOUT ME</a></li>
+                                        <li><a href="#section3" class="mobile-main-btn smooth-btn close-btn" title="개발능력">SKILLS</a></li>
                                         <li><a href="#footer" class="mobile-main-btn smooth-btn close-btn" title="연락처">CONTACT</a></li>
                                     </ul>
                                 </div>
@@ -136,112 +159,17 @@
 
         <!-- 메인영역 -->
         <main id="main">
-            <!-- Home -->
+            <!-- section1 | Home -->
             <section id="section1" class="wheel_event">
                 <div class="wrap">
                     <div class="gap">
                         <div class="container">
-                            <!-- slide -->
-                            <div class="slide-container">
-                                <div class="slide-view">
-                                    <ul class="slide-wrap fixedclear">
-                                        <!-- Vue.js -->
-                                        <!-- 제이슨여행 -->
-                                        <li class="slide slide0">
-                                            <div class="text-wrap">
-                                                <h2>제이슨 여행사/ Responsive Website, Backend</h2>
-                                                <h3>행복해지는 여행을 추구하는<br>제이슨 여행사 공식 홈페이지입니다.</h3>
-                                                <a href="#section5" title="더보기" class="smooth-btn">more
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <!-- 인천공항 -->
-                                        <li class="slide slide1">
-                                            <div class="text-wrap">
-                                                <h2>인천공항/ Responsive Website</h2>
-                                                <h3>대한민국의 관문 역할을 하는<br>인천공항 공식 홈페이지입니다.</h3>
-                                                <a href="#section6" title="더보기" class="smooth-btn">more
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <!-- 홍고 -->
-                                        <li class="slide slide2">
-                                            <div class="text-wrap">
-                                                <h2>홍고시계/ Responsive Website</h2>
-                                                <h3>WooCommerce의 WordPress 테마<br>홍고 공식 홈페이지입니다.</h3>
-                                                <a href="#section7" title="더보기" class="smooth-btn">more
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <!-- 브란도 -->
-                                        <li class="slide slide3">
-                                            <div class="text-wrap">
-                                            <h2>브란도 레스토랑/ Responsive Website</h2>
-                                                <h3>반응형 원페이지 WordPress 테마 <br>브란도 공식 홈페이지입니다.</h3>
-                                                <a href="#section8" title="더보기" class="smooth-btn">more
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <!-- 신라호텔 -->
-                                        <li class="slide slide4">
-                                            <div class="text-wrap">
-                                                <h2>호텔신라/ PC Website</h2>
-                                                <h3>한국을 대표하는<br>신라호텔 공식 홈페이지입니다.</h3>
-                                                <a href="#section9" title="더보기" class="smooth-btn">more
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <!-- 스타벅스 -->
-                                        <li class="slide slide5">
-                                            <div class="text-wrap">
-                                                <h2>스타벅스/ PC Website</h2>
-                                                <h3>세계적인 커피 브랜드 <br>스타벅스 공식 홈페이지입니다.</h3>
-                                                <a href="#section10" title="더보기" class="smooth-btn">more
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <!-- 파이썬 
-                                        <li class="slide slide6">
-                                            <div class="text-wrap">
-                                                <h2>스택오브플로우/ Web Scrolling</h2>
-                                                <h3>가장 큰 규모의 프로그래머 커뮤니티 <br>스택오브플로우 공식 홈페이지입니다.</h3>
-                                                <a href="javascript:" title="더보기" class="smooth-btn">more
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        -->
-                                        <!-- 모멘텀 -->
-                                        <li class="slide slide7">
-                                            <div class="text-wrap">
-                                                <h2>모멘텀/ Realtime PC Website</h2>
-                                                <h3>구글의 To-do 확장 프로그램 <br>모멘텀입니다.</h3>
-                                                <a href="#section11" title="더보기" class="smooth-btn">more
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <!-- 카카오톡 -->
-                                        <li class="slide slide8">
-                                            <div class="text-wrap">
-                                                <h2>카카오톡/ Responsive Messenger</h2>
-                                                <h3>한국의 국민 메신저 <br>카카오톡 PC버전입니다.</h3>
-                                                <a href="#section12" title="더보기" class="smooth-btn">more
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- arrow btn -->
-                                <div class="prev-wrap"><a href="javascript:" class="prev-btn" title="prev button"></a></div>
-                                <div class="next-wrap"><a href="javascript:" class="next-btn" title="next button"></a></div>
+                            <div class="txt-wrap">
+                                <h2 class="txt-details">Front End Developer</h2>
+                                <h3 class="txt-details">안녕하세요. 프론트엔드 웹 개발자 박소혜입니다.</h3>
+                            </div>
+                            <div class="img-wrap">
+                                <h4 class="blind">image</h4>
                             </div>
                         </div>
                     </div>
@@ -252,12 +180,11 @@
                 <div class="wrap">
                     <div class="gap">
                         <div class="title-wrap">
-                            <h2>About Me</h2>
+                            <h2>Profile</h2>
                         </div>
                         <div class="container fixedclear">
                             <div class="left-wrap">
-                                <div class="img-wrap"><h3 class="blind">image</h3></div>
-                                <div class="left-content">
+                                <div class="left-content left-myself">
                                     <div>
                                         <i class="fas fa-birthday-cake"></i>
                                         <span>1996.10.01</span>
@@ -271,42 +198,40 @@
                                         <span>ps961001@gmail.com</span>
                                     </div>
                                 </div>
+                                <div class="left-content left-career">
+                                    <div>
+                                        <i class="fas fa-laptop-code"></i>
+                                        <span>Education</span>
+                                        <ul>
+                                            <li>- 2021.01.22 ~ : 온라인 부트캠프 노마드코더</li>
+                                            <li>- 2020.09.14 ~ 2021.01.22 : UI/UX 웹디자인 실무자 양성과정(웹퍼블리셔, 프론트엔드)(혼합훈련)</li>
+                                            <li>- 2020.04.13 ~ 2020.09.13 : 온라인 부트캠프 노마드코더</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <i class="far fa-address-card"></i>
+                                        <span>Experience</span>
+                                        <ul>
+                                            <li>- 2018.11 ~ 2020.03 : (주)스타벅스코리아 사원</li>
+                                            <li>- 2017.08 ~ 2018.08 : (주)호텔신라 식음팀 인턴</li>
+                                            <li>- 2016.03 ~ 2018.02 : 한양여자대학교 호텔관광과 졸업</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="right-wrap">
-                                <div class="right-title title1 fixedclear">
-                                    <i class="fas fa-laptop-code"></i>
-                                    <a href="javascript:" title="Education" class="title-btn title-btn1 addUp">Education
-                                        <i></i>
-                                    </a>
-                                </div>
-                                <div class="right-content right-content1 fixedclear">
-                                    <ul class="date-wrap">
-                                        <li class="margin">20.09 - 21.01</li>
-                                        <li>20.04 - 20.09</li>
-                                    </ul>
-                                    <ul class="content-wrap">
-                                        <li>UI/UX 웹디자인 실무자 양성과정<br class="response">(웹퍼블리셔, 프론트엔드)(혼합훈련)<br>- 더조은아카데미</li>
-                                        <li>Online BootCamp - Nomad Coders</li>
-                                    </ul>
-                                </div>
-                                <div class="right-title title2 fixedclear">
-                                    <i class="far fa-address-card"></i>
-                                    <a href="javascript:" title="Experience" class="title-btn title-btn2 addUp">Experience
-                                        <i></i>
-                                    </a>
-                                </div>
-                                <div class="right-content right-content2 fixedclear">
-                                    <ul class="date-wrap">
-                                        <li>18.11 - 20.03</li>
-                                        <li>17.08 - 18.08</li>
-                                        <li>16.03 - 18.02</li>
-                                    </ul>
-                                    <ul class="content-wrap">
-                                        <li>(주)스타벅스코리아 사원</li>
-                                        <li>(주)호텔신라 식음팀 인턴</li>
-                                        <li>한양여자대학교 호텔관광과 졸업</li>
-                                    </ul>
-                                </div>
+                                <ul>
+                                    <li class="skill"><h2 class="blind">HTML</h2></li>
+                                    <li class="skill"><h2 class="blind">CSS</h2></li>
+                                    <li class="skill"><h2 class="blind">JavaScript</h2></li>
+                                    <li class="skill"><h2 class="blind">Vue.js</h2></li>
+                                    <li class="skill"><h2 class="blind">React.js</h2></li>
+                                    <li class="skill"><h2 class="blind">PHP</h2></li>
+                                    <li class="skill"><h2 class="blind">DB</h2></li>
+                                    <li class="skill"><h2 class="blind">SVG</h2></li>
+                                    <li class="skill"><h2 class="blind">API</h2></li>
+                                    <li class="skill"><h2 class="blind">GIT</h2></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -633,8 +558,11 @@
                         <div class="address">
                             <ul>
                                 <li class="name">Park So Hye</li>
-                                <li class="phone"><i class="fas fa-phone-volume"></i>+82 10-2962-3908</li>
-                                <li class="email"><i class="far fa-envelope"></i>ps961001@gmail.com</li>
+                                <li class="icons">
+                                    <a href="#" class="i-btn" title="이메일"><i class="fas fa-envelope"></i></a>
+                                    <a href="#" class="i-btn" title="깃허브"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="i-btn" title="노션"><i class="notion"></i></a>
+                                </li>
                             </ul>
                             <div>
                                 <h2 class="copyright">Copyright &copy; Park Sohye. All rights reserved.</h2>
