@@ -65,9 +65,9 @@
 }
 
 @media all and (max-width:550px){
-    #wrap #main #section4 .wrap .gap .container > ul > div {padding:5px 15px;}
-    #wrap #main #section4 .wrap .gap .container > ul > div > li .details-title > h2 {font-size:/* 15px; */2.727272727vw;}
-    #wrap #main #section4 .wrap .gap .container > ul > div > li .details-content > address {font-size:/* 35px */6.363636364vw;padding:10px 0;}
+    #wrap #main #section4 .wrap .gap .container > div > ul {padding:5px 15px;}
+    #wrap #main #section4 .wrap .gap .container > div > ul > li .details-title > h2 {font-size:/* 15px; */2.727272727vw;}
+    #wrap #main #section4 .wrap .gap .container > div > ul > li .details-content > address {font-size:/* 35px */6.363636364vw;padding:10px 0;}
 }
 
 @media all and (max-width:500px){
