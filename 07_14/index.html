@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Portfolio By Sohye</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0. maximum-scale=1.6, user-scalable=no">
+    <meta name="Title" content="박소혜 포트폴리오">
+    <meta name="Publisher" content="프론트엔드, 프레임워크 박소혜">
+    <meta name="Author-date" content="2021-07-14"> 
+    <meta name="Author" content="프론트엔드, 프레임워크 박소혜">
+    <meta name="Copyright" content="프론트엔드, 프레임워크 박소혜">
+    <meta name="Keywords" content="프론트엔드, UX, UI, 프레임워크, 서버개발, 데이터베이스, 알고리즘">
+    <meta name="description" content="프론트엔드, 프레임워크, 데이트베이스를 이용한 서버개발 등을 공부하는 박소혜입니다."> 
+    <meta name="Robots" content="index, follow">
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="https://github.com/ps9610/park_sohye/blob/main/04_08/img/pavicon.jpg">
+    <link rel="apple-touch-icon" href="https://github.com/ps9610/park_sohye/blob/main/04_08/img/pavicon.jpg">
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/response.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+
+    <!-- 오픈 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- font-awesome 4.0 -->
+    <script src="https://kit.fontawesome.com/4f7161b8b7.js" crossorigin="anonymous"></script> <!-- font-awesome 5.0 -->
+
+    <!-- 오픈소스 -->
+    <script src="./js/lib/jquery-1.12.4.min.js"></script>
+    <script src="./js/lib/prefixfree.min.js"></script>
+    <script src="./js/lib/jquery.touchSwipe.js"></script>
+    <script src="./js/lib/jquery.easing.1.3.js"></script>
+
+    <!-- 조건 주석문 익스프롤러 하위 IE9 IE8 IE7 폴리필 --><!-- 스크립트 스타일 -->
+
+    <!--[if lte IE 9]>
+        <script src="./js/lib/IE9.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+        <script src="./js/lib/html5shiv.min.js"></script>
+        <script src="./js/lib/jqPIE.js"></script>
+        <script src="./js/lib/PIE.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/ie8.css">
+    <![endif]-->
+
+    <!--[if lte IE 7]>
+        <link rel="stylesheet" type="text/css" href="./css/ie7.css">
+    <![endif]-->
+ 
+</head>
+<body>
+    <!-- skip 메뉴 -->
+    <ul id="skip">
+        <li><a href="#section1" title="헤더바로가기">헤더바로가기</a></li>
+        <li><a href="#main"     title="메인바로가기">메인바로가기</a></li>
+        <li><a href="#footer"   title="푸터바로가기">푸터바로가기</a></li>
+    </ul>
+    <div id="wrap">
+        <!-- 헤더영역 -->
+        <header id="header">
+            <div class="wrap">
+                <div class="gap">
+                    <div class="container">
+                        <!-- 로고 -->
+                        <div class="center">
+                            <h1 class="logo">
+                                <a href="#section1" class="logo-btn smooth-btn" title="프로필 포트폴리오">PARK SO HYE</a>
+                            </h1>
+                        </div>
+                        <!-- 네비게이션 -->
+                        <div class="left">
+                            <nav id="nav">
+                                <div class="mobile-btn">
+                                    <a href="#" class="hamburger-btn" title="메인메뉴바">
+                                        <i class="mline mline1"></i>
+                                        <i class="mline mline2"></i>
+                                        <i class="mline mline3"></i>
+                                    </a>
+                                </div>
+                                <div class="mobile-menu">
+                                    <div class="m-gap">
+                                        <div class="close">
+                                            <a href="#" class="close-btn" title="모바일 닫기">
+                                                <i></i>
+                                                <i></i>
+                                            </a>
+                                        </div>
+                                        <div class="m-content">
+                                            <ul>
+                                                <li><a href="#section1" class="mobile-main-btn smooth-btn close-btn" title="홈">HOME</a></li>
+                                                <li><a href="#section2" class="mobile-main-btn smooth-btn close-btn" title="자기소개">PROFILE</a></li>
+                                                <li><a href="#section3" class="mobile-main-btn smooth-btn close-btn" title="포트폴리오">WORKS</a></li>
+                                                <li><a href="#footer" class="mobile-main-btn smooth-btn close-btn" title="연락처">CONTACT</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="m-footer">
+                                            <ul>
+                                                <li>Park So Hye</li>
+                                                <li>Copyright &copy; Park Sohye. All rights reserved.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- 모바일 -->
+                    <div class="mobile">
+                        <div class="mobile-gap">
+                            <div class="mobile-header">
+                                <!-- 모바일 햄버거버튼 -->
+                                <div class="mobile-btn">
+                                    <a href="#" class="hamburger-btn" title="모바일 전용 메뉴바">
+                                        <i class="mline mline1"></i>
+                                        <i class="mline mline2"></i>
+                                        <i class="mline mline3"></i>
+                                    </a>
+                                </div>
+                                <!-- 모바일 로고 -->
+                                <div class="mobile-logo">
+                                    <h1 class="m-logo">
+                                        <a href="#section1" class="mobile-logo" title="모바일 로고">PARK SOHYE</a>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 모바일 메뉴 -->
+                        <div class="mobile-menu">
+                            <div class="m-gap">
+                                <div class="close">
+                                    <a href="#" class="close-btn" title="모바일 닫기">
+                                        <i></i>
+                                        <i></i>
+                                    </a>
+                                </div>
+                                <div class="m-content">
+                                    <ul>
+                                        <li><a href="#section1" class="mobile-main-btn smooth-btn close-btn" title="홈">HOME</a></li>
+                                        <li><a href="#section2" class="mobile-main-btn smooth-btn close-btn" title="자기소개">PROFILE</a></li>
+                                        <li><a href="#section3" class="mobile-main-btn smooth-btn close-btn" title="개발능력">WORKS</a></li>
+                                        <li><a href="#section4" class="mobile-main-btn smooth-btn close-btn" title="연락처">CONTACT</a></li>
+                                    </ul>
+                                </div>
+                                <div class="m-footer">
+                                    <ul>
+                                        <li>Park So Hye</li>
+                                        <li>Copyright &copy; Park Sohye. All rights reserved.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 메인영역 -->
+        <main id="main">
+            <!-- section1 | Home -->
+            <section id="section1" class="wheel_event">
+                <div class="wrap">
+                    <div class="gap">
+                        <div class="container">
+                            <div class="txt-wrap">
+                                <h2 class="txt-details">Front End Developer</h2>
+                                <h3 class="txt-details">안녕하세요. 프론트엔드 웹 개발자 박소혜입니다.</h3>
+                                <p class="txt-details">끊임없이 배우고 발전하는 Fast Learner가 되겠습니다.</p>
+                            </div>
+                            <div class="img-wrap">
+                                <h4 class="blind">image</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="go-down">
+                        <a href="#section2" class="down-btn smooth-btn" title="다음 섹션으로 이동하기">
+                            <i class="far fa-hand-point-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- PROFILE -->
+            <section id="section2" class="wheel_event">
+                <div class="wrap">
+                    <div class="gap">
+                        <div class="title-wrap">
+                            <h2>Profile</h2>
+                        </div>
+                        <div class="container fixedclear">
+                            <div class="left-wrap">
+                                <div class="left-content left-myself">
+                                    <div>
+                                        <i class="fas fa-birthday-cake"></i>
+                                        <span>1996.10.01</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-phone-alt"></i>
+                                        <span>+82 10-2962-3908</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-envelope"></i>
+                                        <span>ps961001@gmail.com</span>
+                                    </div>
+                                </div>
+                                <div class="left-content left-career">
+                                    <div>
+                                        <i class="fas fa-laptop-code"></i>
+                                        <span>Education</span>
+                                        <ul>
+                                            <li>- 2021.01.22 ~ : 온라인 부트캠프 노마드코더</li>
+                                            <li>- 2020.09.14 ~ 2021.01.22 : UI/UX 웹디자인 실무자 양성과정(웹퍼블리셔, 프론트엔드)(혼합훈련)</li>
+                                            <li>- 2020.04.13 ~ 2020.09.13 : 온라인 부트캠프 노마드코더</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <i class="far fa-address-card"></i>
+                                        <span>Experience</span>
+                                        <ul>
+                                            <li>- 2018.11 ~ 2020.03 : (주)스타벅스코리아 사원</li>
+                                            <li>- 2017.08 ~ 2018.08 : (주)호텔신라 식음팀 인턴</li>
+                                            <li>- 2016.03 ~ 2018.02 : 한양여자대학교 호텔관광과 졸업</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-wrap">
+                                <div class="right-content">
+                                    <div class="right-title">
+                                        <h2>Skills</h2>
+                                    </div>
+                                    <ul>
+                                        <li class="skill"><h3 class="blind">HTML</h3></li>
+                                        <li class="skill"><h3 class="blind">CSS</h3></li>
+                                        <li class="skill"><h3 class="blind">JavaScript</h3></li>
+                                        <li class="skill"><h3 class="blind">Jquery</h3></li>
+                                        <li class="skill"><h3 class="blind">Vue.js</h3></li>
+                                        <li class="skill"><h3 class="blind">React.js</h3></li>
+                                        <li class="skill"><h3 class="blind">node.js</h3></li>
+                                        <li class="skill"><h3 class="blind">PHP</h3></li>
+                                        <li class="skill"><h3 class="blind">DB</h3></li>
+                                        <li class="skill"><h3 class="blind">SVG</h3></li>
+                                        <li class="skill"><h3 class="blind">API</h3></li>
+                                        <li class="skill"><h3 class="blind">GIT</h3></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="section3" class="wheel_event">
+                <div class="wrap">
+                    <div class="gap">
+                        <div class="container">
+                            <div class="title-wrap">
+                                <h2>Works</h2>
+                            </div>
+                            <ul class="fixedclear">
+                                <li>
+                                    <div class="gallery-content">
+                                        <div class="img-wrap">
+                                            <h2 class="blind">react</h2>
+                                        </div>
+                                        <div class="img-detail">
+                                            <h3 class="img-title">React JS로 영화 웹서비스 코딩</h3>
+                                            <h4 class="img-txt">React JS의 기본을 배우며 내비게이션, 영화 상세 정보 등 입문 단계의 기능을 구현하고 배포까지 진행하였습니다.</h4>
+                                        </div>
+                                    </div>
+                                    <a href="https://nostalgic-hodgkin-11145d.netlify.app/#/" title="gallery-button" class="gallery-btn" target="_blank"></a>
+                                </li>
+                                <li>
+                                    <div class="gallery-content">
+                                        <div class="img-wrap">
+                                            <h2 class="blind">Hongo</h2>
+                                        </div>
+                                        <div class="img-detail">
+                                            <h3 class="img-title">Hongo Watch 클론코딩</h3>
+                                            <h4 class="img-txt">기존의 UI를 하드 코딩하여 반응형 웹으로 개발하였습니다.</h4>
+                                        </div>
+                                    </div>
+                                    <a href="http://sohye.dothome.co.kr/hongo/" title="gallery-button" class="gallery-btn" target="_blank"></a>
+                                </li>
+                                <li>
+                                    <div class="gallery-content">
+                                        <div class="img-wrap">
+                                            <h2 class="blind">Incheon airport</h2>
+                                        </div>
+                                        <div class="img-detail">
+                                            <h3 class="img-title">인천공항 클론코딩</h3>
+                                            <h4 class="img-txt">기존의 UI를 하드 코딩하여 반응형 웹으로 개발하였습니다.</h4>
+                                        </div>
+                                    </div>
+                                    <a href="http://sohye.dothome.co.kr/airport/" title="gallery-button" class="gallery-btn" target="_blank"></a>
+                                </li>
+                                <li>
+                                    <div class="gallery-content">
+                                        <div class="img-wrap">
+                                            <h2 class="blind">Brando</h2>
+                                        </div>
+                                        <div class="img-detail">
+                                            <h3 class="img-title">Brando Restaurant 클론 코딩</h3>
+                                            <h4 class="img-txt">기존의 UI를 하드 코딩하여 반응형 웹 개발과 php를 이용하여 폼 전송 기능까지 진행하였습니다.</h4>
+                                        </div>
+                                    </div>
+                                    <a href="http://sohye.dothome.co.kr/restaurant_brando" title="gallery-button" class="gallery-btn" target="_blank"></a>
+                                </li>
+                                <li>
+                                    <div class="gallery-content">
+                                         <div class="img-wrap">
+                                             <h2 class="blind">Jason travel</h2>
+                                         </div>
+                                         <div class="img-detail">
+                                             <h3 class="img-title">Jason Travel 클론코딩</h3>
+                                             <h4 class="img-txt">기존의 UI를 하드 코딩하여 반응형 웹 개발과 php와 DB를 이용한 로그인 기능까지 구현하였습니다.</h4>
+                                         </div>
+                                     </div>
+                                     <a href="http://sohye.dothome.co.kr/jason_php/" title="gallery-button" class="gallery-btn" target="_blank"></a>
+                                </li>
+                                <li>
+                                    <div class="gallery-content">
+                                        <div class="img-wrap">
+                                            <h2 class="blind">Starbucks</h2>
+                                        </div>
+                                        <div class="img-detail">
+                                            <h3 class="img-title">스타벅스 홈페이지 클론코딩</h3>
+                                            <h4 class="img-txt">웹 표준을 준수하며 기존의 UI를 하드 코딩하였고 php를 이용하여 공지사항 기능까지 진행하였습니다.</h4>
+                                        </div>
+                                    </div>
+                                    <a href="http://sohye.dothome.co.kr/starbuks/" title="gallery-button" class="gallery-btn" target="_blank"></a>
+                                </li>
+                                <li>
+                                    <div class="gallery-content">
+                                        <div class="img-wrap">
+                                            <h2 class="blind">Hotel</h2>
+                                        </div>
+                                        <div class="img-detail">
+                                            <h3 class="img-title">신라호텔 홈페이지 클론코딩</h3>
+                                            <h4 class="img-txt">웹 표준을 준수하며 기존의 UI를 하드 코딩하였습니다.</h4>
+                                        </div>
+                                    </div>
+                                    <a href="http://sohye.dothome.co.kr/shillahotels/" title="gallery-button" class="gallery-btn" target="_blank"></a>
+                                </li>
+                                <li>
+                                    <div class="gallery-content">
+                                        <div class="img-wrap">
+                                            <h2 class="blind">kokoatalk</h2>
+                                        </div>
+                                        <div class="img-detail">
+                                            <h3 class="img-title">코코아톡 클론코딩</h3>
+                                            <h4 class="img-txt">HTML과 CSS의 기초를 배우며 카카오톡 UI를 토대로 진행하였습니다.</h4>
+                                        </div>
+                                    </div>
+                                    <a href="https://ps9610.github.io/kakao-clone-v2/" title="gallery-button" class="gallery-btn" target="_blank"></a>
+                                </li>
+                                <li>
+                                    <div class="gallery-content">
+                                        <div class="img-wrap">
+                                            <h2 class="blind">momentum</h2>
+                                        </div>
+                                        <div class="img-detail">
+                                            <h3 class="img-title">크롬 앱 모멘텀 클론코딩</h3>
+                                            <h4 class="img-txt">100% 바닐라 JS로 구현한 To-do List 입니다.</h4>
+                                        </div>
+                                    </div>
+                                    <a href="https://ps9610.github.io/vanilla-js-chrome/" title="gallery-button" class="gallery-btn" target="_blank"></a>
+                                </li>
+                                <li>
+                                    <div class="gallery-content">
+                                        <div class="img-wrap">
+                                            <h2 class="blind">Vue</h2>
+                                        </div>
+                                        <div class="img-detail">
+                                            <h3 class="img-title">Vue JS로 To-do List 만들기</h3>
+                                            <h4 class="img-txt">Vue JS의 기본부터 실무에 필요한 컴포넌트 기반 설계 방법 프로젝트 구조화로 설계하였습니다.</h4>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/ps9610/project_vue_js/" title="gallery-button" class="gallery-btn" target="_blank"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section4" class="wheel_event">
+                <div class="wrap">
+                    <div class="gap">
+                        <div class="container">
+                            <div class="title-wrap">
+                                <h2>Contact</h2>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="contact-details">
+                                        <div class="details-title">
+                                            <h2>전화번호</h2>
+                                        </div>
+                                        <div class="details-content">
+                                            <address>+82 10-2962-3908</address>
+                                        </div>
+                                    </li>
+                                    <li class="contact-details">
+                                        <div class="details-title">
+                                            <h2>이메일</h2>
+                                        </div>
+                                        <div class="details-content">
+                                            <address>ps961001@gmail.com</address>
+                                        </div>
+                                    </li>
+                                    <li class="contact-details">
+                                        <div class="details-title">
+                                            <h2>깃허브</h2>
+                                        </div>
+                                        <div class="details-content">
+                                            <address><a href="https://github.com/ps9610" title="https://github.com/ps9610">https://github.com/ps9610</a></address>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        <!-- 푸터영역 -->
+        <footer id="footer" class="wheel_event">
+            <div class="wrap">
+                <div class="gap">
+                    <div class="container">
+                        <address class="address">
+                            <ul>
+                                <li class="name">Park So Hye</li>
+                                <li class="icons">
+                                    <a href="javascript:" class="i-btn i-email"><i class="fas fa-envelope"></i></a>
+                                    <a href="https://github.com/ps9610" class="i-btn" title="깃허브" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.notion.so/Blog-Post-2d406877686f49ccb5455c676131cfae" class="i-btn" title="노션" target="_blank"><i class="notion"></i></a>
+                                    <span class="tool">
+                                        <span class="tooltip">
+                                            <span class="tooltip-wrap">
+                                                <span>ps961001@gmail.com</span>
+                                            </span>
+                                        </span>
+                                        <span class="tooltip-tail"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                            <div>
+                                <span class="copyright">Copyright &copy; Park Sohye. All rights reserved.</span>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- go-top -->
+        <div class="go-top">
+            <a href="#section1" class="goTop-btn smooth-btn">
+                <span class="arrow-up">
+                    <i></i>
+                </span>
+            </a>
+        </div>
+    </div>
+    <!-- w3c -->
+    <div class="w3c" style="display:none">
+        <p>
+            <a href="http://validator.kldp.org/check?uri=referer"
+              onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))">
+              <img src="http://validator.kldp.org/w3cimgs/validate/html5-black.png" alt="Valid HTML 5" height="15" width="80">
+            </a>
+        </p>
+        <p>
+            <a href="http://css-validator.kldp.org/check/referer">
+                <img style="border:0;width:80px;height:15px" src="http://css-validator.kldp.org/images/validate/css-black" alt="올바른 CSS입니다!" />
+            </a>
+        </p>
+    </div>
+    <script src="./js/personal.js"></script>
+</body>

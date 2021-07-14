@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* 모바일->pc = min-width */
+/* pc->모바일 = max-width = 내림차순 */
+
+@media all and (max-width:1880px){
+    #wrap #main #section1 .wrap .gap .container {padding:120px 0;}
+    #wrap #main #section1 .wrap .go-down > a > i {animation:none;}
+}
+
+@media all and (max-width:1750px){
+    #wrap #main #section1 .wrap .gap .container {padding:120px 0;}
+    #wrap #main #section1 .wrap .go-down > a > i {animation:none;}
+}
+
+@media all and (max-width:1440px){
+    #wrap #main #section1 .wrap .go-down {bottom:0;}
+}
+
+@media all and (max-width:1200px){
+    #wrap #main #section2 .wrap .gap .container .left-wrap .left-content > div > i {font-size:/* 18px */1.5vw;}
+    #wrap #main #section2 .wrap .gap .container .left-wrap .left-content > div > span {font-size:/* 20px */1.666666667vw;}
+    #wrap #main #section2 .wrap .gap .container .left-wrap .left-content > div > ul > li {font-size:/* 16px */1.333333333vw;}
+    #wrap #main #section2 .wrap .gap .container .right-wrap .right-content > ul > li > h3 {width:80px;height:80px;}
+    
+    #wrap #main #section3 .wrap .gap .container {width:100%;max-width:100%;}
+}
+
+@media all and (max-width:1024px){
+    #wrap #header .wrap .gap .container {display:none;}
+    #wrap #header .wrap .gap .mobile {display:block;}
+
+    #wrap #main #section2 .wrap .gap .container .left-wrap .left-content > div > i {font-size:/* 18px */1.7578125vw;}
+    #wrap #main #section2 .wrap .gap .container .left-wrap .left-content > div > span {font-size:/* 20px */1.953125vw;}
+    #wrap #main #section2 .wrap .gap .container .left-wrap .left-content > div > ul > li {font-size:/* 16px */1.5625vw;}
+
+    #wrap #main #section3 .wrap .gap .container > ul > li {width:50%;}
+}
+
+@media all and (max-width:900px){
+    
+}
+
+@media all and (max-width:768px){
+    #wrap #main #section1 .wrap .gap .container .txt-wrap > h2 {font-size:/* 50px; */ 6.510416667vw;}
+    #wrap #main #section1 .wrap .gap .container .txt-wrap > h3 {font-size:/* 30px */ 3.90625vw;}
+    #wrap #main #section1 .wrap .gap .container .txt-wrap > p {font-size:/* 18px */ 2.34375vw;}
+    #wrap #main #section1 .wrap .gap .container .go-down > a > i {font-size:/* 50px */6.51041667vw;}
+
+    #wrap #main #section2 .wrap .gap .container .right-wrap .right-content > ul > li > h3 {width:70px;height:70px;}
+}
+
+@media all and (max-width:680px){
+    #wrap #main #section2 .wrap .gap .container .left-wrap {margin-left:0;float:none;width:100%;}
+    #wrap #main #section2 .wrap .gap .container .right-wrap {margin-right:0;float:none;width:100%;border:none;}
+    #wrap #main #section2 .wrap .gap .container .right-wrap .right-content .right-title > h2 {font-size:42px;color:#f1f1f1;font-weight:700;margin-bottom:20px;}
+}
+
+@media all and (max-width:650px){
+    #wrap #footer .wrap .gap .container > address > ul > li {font-size:2.461538462vw/* 16px */;}
+    #wrap #footer .wrap .gap .container > address > ul .name {font-size:3.076923077vw/* 20px */;}
+    #wrap #footer .wrap .gap .container > address > ul > li > i {font-size:2.461538462vw/* 16px */;}
+    #wrap #footer .wrap .gap .container > address > div > h2 {font-size:2.461538462vw/* 16px */;}
+    #wrap #main #section3 .wrap .gap .container > ul > li {width:90%;margin:0 auto;}
+}
+
+@media all and (max-width:550px){
+    #wrap #main #section4 .wrap .gap .container > div > ul {padding:5px 15px;}
+    #wrap #main #section4 .wrap .gap .container > div > ul > li .details-title > h2 {font-size:/* 15px; */2.727272727vw;}
+    #wrap #main #section4 .wrap .gap .container > div > ul > li .details-content > address {font-size:/* 35px */6.363636364vw;padding:10px 0;}
+}
+
+@media all and (max-width:500px){
+    #wrap #main #section1 .wrap .go-down {display:none;}
+    #wrap #main #section1 .wrap .gap .container {padding:50px 0;}
+    #wrap #main #section1 .wrap .gap .container .txt-wrap > p {font-size:/* 14px */2.8vw;}
+    #wrap #main #section2 .wrap .gap .container .left-wrap .left-content > div > span {color:#f1f1f1;}
+
+    #wrap #main #section2 .wrap .gap .container .left-wrap .left-content > div > i {font-size:/* 18px */3.6vw;}
+    #wrap #main #section2 .wrap .gap .container .left-wrap .left-content > div > span {font-size:/* 20px */4vw;}
+    #wrap #main #section2 .wrap .gap .container .left-wrap .left-content > div > ul > li {font-size:/* 16px */3.2vw;}
+    #wrap #main #section2 .wrap .gap .container .right-wrap .right-content > ul > li > h3 {width:70px;height:70px;}
+
+    #wrap #main #section3 .wrap .gap .container > ul > li {width:100%;}
+    #wrap #main #section3 .wrap .gap .container > ul > li .gallery-content .img-detail {padding:20px 0 40px 0;}
+}
+
+@media all and (max-width:450px){
+    #wrap #main #section1 .wrap .gap .container .img-wrap > h4 {margin:0 auto;width:80%;max-width:250px;height:250px;}
+    #wrap #main #section2 .wrap .gap .container .right-wrap .right-content > ul > li > h3 {width:50px;height:50px;}
+    
+}
